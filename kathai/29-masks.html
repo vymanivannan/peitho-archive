@@ -1,0 +1,72 @@
+<html>
+    <head>
+      <title>அரக்கர் (Arakkar)</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">    
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-rfs/bootstrap-rfs.css" rel="stylesheet"> 
+      <script src="https://kit.fontawesome.com/70b5154e5d.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>          
+      <link rel="shortcut icon" href="../img/site.ico" type="image/x-icon"/>
+      <link rel="stylesheet" type="text/css" href="../pain-relief.css">        
+    </head>  
+    <body id="object"> 
+      <div id="scrollbar">
+          <div id="bar"></div>
+      </div>
+      <nav class="navbar navbar-expand-sm fixed-top">
+          <div class="me-auto">
+            <p class="m-3 fs-2">Pain and Relief Come of Themselves</p>
+          </div>       
+          <div class="ms-auto">
+            <h2 class="m-3">Vyshali Manivannan</h2>
+          </div>         
+      </nav>  
+      <div id="object_wrapper">        
+          <div class="sidebar"> 
+              <figure class="figure">
+                  <img class="image" src="../img/masks.jpeg" alt="Three traditional Sri Lankan masks with bulging eyes and protruding tongues hang on a beige wall: one small Naga Raksha mask and one small and one large Gara Raksha, carved from wood and painted in red, green, yellow, white, and blacks.">
+                  <figcaption class="figure-caption text-start">
+                    Three traditional Sri Lankan masks with bulging eyes and protruding tongues hang on a beige wall: one small Naga Raksha mask and one small and one large Gara Raksha, carved from wood and painted in red, green, yellow, white, and blacks. Courtesy of familial archives.
+                  </figcaption>
+              </figure>            
+          </div> 
+          <div class="main"> 
+              <h2><span lang="ta">அரக்கர்</span></h2>
+              <h3 class="pb-4"><i><span lang="ta">Arakkar</span> (raksha)</i></h3>			   
+                <p class="epigraph" style="text-align: right;">Content note: evil eye and mouth, ritual dance</p>	
+                <p class="pt-3">The Sinhalese <span lang="si">Kolam</span> ritual pays tribute to the <span lang="ta">rakshasas</span>, the shapeshifting demon race that reigned over ancient Lanka, with folk dances using hand-carved, colorfully painted masks that represent the different forms <span lang="ta">rakshas</span> can take. Like <span lang="si">Naga Raksha</span> (Cobra), adorned with numerous cobra hoods, a ferocious, sharp-toothed mouth and a slavering, protruding tongue, with the power to protect against many evil spirits. Or <span lang="si">Gara Raksha</span> (King of Demon), which &mdash; despite being smaller than some of other masks used in Sinhalese <span lang="si">perahera</span> (religious processions) &mdash; is widely used, brought out to conclude the dance or used in separate performances, where it acquires curative powers and dispels the influence of the evil eye and mouth. Valli's disabled Americanized son Kannan scoffs at this, but most Sri Lankans, including Valli, are true believers. She wants to bring Kannan back home to see such a dance, but Kannan refuses, citing his disbelief and, if not that, the difficulties of traveling internationally with chronic pain. The last time Valli returned to Sri Lanka, she visited a family friend she hadn't seen for 20 years, who gifts her three <span lang="si">Raksha</span> masks, saying, <i>Hang them in a place he will always pass; when he visits you, they will work on him</i>. As apotropaic artifacts, <span lang="si">Raksha</span> masks hang in many Sri Lankan houses. Valli secretly fancies that Kannan's health improves every time he comes home but has learned it's pointless to say this to a skeptic.</p>
+                <p class="pt-3 text-end"><a class="text-end" href="../gallery.html"><i class="fa-regular fa-circle-left"></i> Return to Gallery</a></p>
+          </div> 
+      </div> 
+  </body>
+  <footer class="footer-mod sticky-bottom align-text-bottom p-1">
+    <p>&copy; 2024 Vyshali Manivannan. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0 <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a>. Written and designed by Vyshali Manivannan. Photographs courtesy of familial archives and Unsplash.</p>
+  </footer>
+    <script>
+      var bar = document.getElementById("bar");
+        window.onscroll = function() {
+        scrollIndicator()
+      };
+      function scrollIndicator() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = 100;
+      if (height > 0) {
+        scrolled = (winScroll / height) * 100;
+      }
+      bar.style.height = scrolled + "%";
+      }
+    </script>
+    <script>
+      // init Masonry
+  var $grid = $('.grid').masonry({
+    // options...
+  });
+  // layout Masonry after each image loads
+  $grid.imagesLoaded().progress( function() {
+    $grid.masonry('layout');
+  });
+    </script>  
+  </html>
